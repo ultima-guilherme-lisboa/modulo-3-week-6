@@ -6,6 +6,12 @@ describe('Utils Module', ()=> {
         let list = [null,'a','b',2,{}, 'f']
         let listFilter = await utils.listRemoveNull(list)
         expect(listFilter).toEqual(['a','b',2,{}, 'f'])
+    })    
+    
+    test('remove a 0 in final of list', async ()=> {
+        let list = [0,'a','b',2,{}, 'f']
+        let listFilter = await utils.listRemoveZeros(list)
+        expect(listFilter).toEqual(['a','b',2,{}, 'f'])
     })
 
 
