@@ -5,7 +5,7 @@ describe('Utils Module', ()=> {
     test('remove a null in begin of list', async ()=> {
         let list = [null,'a','b',2,{}, 'f']
         let listFilter = await utils.listRemoveNull(list)
-        expect(listFilter).toEqual(['a','b',2,{}, 'f'])
+        expect(listFilter).toEqual([nul,'a','b',2,{}, 'f'])
     })    
         test('remove a null in final of list', async ()=> {
         let list = ['a','b',2,{}, 'f', null]
